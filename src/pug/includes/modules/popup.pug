@@ -1,0 +1,38 @@
+.modal.fix-block
+	.modal__overlay
+		.modal__window.modal-item(data-modal-name='First')
+			.modal-item__header
+				h3.modal-item__title Modal Title
+				button.modal-item__close(data-modal-close) &times;
+			.modal-item__body
+				p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nostrum?
+				p Lorem ipsum dolor sit amet.
+			.modal-item__footer
+				button.modal-item__button.btn-modal.btn-modal_confirm OK 
+				button.modal-item__button.btn-modal.btn-modal_cancel(data-modal-close) Отмена
+				button.modal-item__buttom.btn-modal.btn-modal_secondary(data-modal-open='Second' data-animation-window='fadeInDown' data-speed-window='1000') Открыть
+		.modal__window.modal-item(data-modal-name='Second')
+			.modal-item__header
+				h3.modal-item__title Modal Title
+				button.modal-item__close(data-modal-close) &times;
+			.modal-item__body
+				p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nostrum?
+				p Lorem ipsum dolor sit amet.
+			.modal-item__footer
+				button.modal-item__button.btn-modal.btn-modal_confirm OK 
+				button.modal-item__button.btn-modal.btn-modal_cancel(data-modal-close) Отмена
+				button.modal-item__button.btn-modal.btn-modal_secondary Отказ
+		.modal__window.modal-item(data-modal-name='Third')
+			.modal-item__header
+				h3.modal-item__title Modal Title
+				button.modal-item__close(data-modal-close) &times;
+			.modal-item__body
+				p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nostrum?
+				p Lorem ipsum dolor sit amet.
+			.modal-item__footer
+				button.modal-item__button.btn-modal.btn-modal_confirm OK 
+				button.modal-item__button.btn-modal.btn-modal_cancel(data-modal-close) Отмена
+				button.modal-item__button.btn-modal.btn-modal_secondary Отказ
+
+
+//- button.modal-open(data-modal-open='First' data-animation-window='fade' data-speed-overlay='1000' data-speed-window='') Открыть
